@@ -5,12 +5,30 @@ import "./Options.css";
 const Options = (props) => {
   const options = [
     {
-      text: "Javascript",
-      handler: props.actionProvider.handleJavascriptQuiz,
+      text: "Mata Kuliah",
+      handler: props.actionProvider.handleMataKuliah,
       id: 1,
     },
-    { text: "Python", handler: () => {}, id: 2 },
-    { text: "Golang", handler: () => {}, id: 3 },
+    {
+      text: "Sosial Media",
+      handler: props.actionProvider.handleSosialMedia,
+      id: 2,
+    },
+    {
+      text: "Link Akademik",
+      handler: props.actionProvider.handleLinkAkademik,
+      id: 3,
+    },
+    {
+      text: "Jadwal UAS",
+      handler: props.actionProvider.handleJadwalUAS,
+      id: 4,
+    },
+    {
+      text: "Informasi Tugas Besar",
+      handler: props.actionProvider.handleTugasBesar,
+      id: 5,
+    },
   ];
 
   const buttonsMarkup = options.map((option) => (
