@@ -8,9 +8,6 @@ import config from "./components/MyConfig";
 import MessageParser from "./components/MyMessageParser";
 import ActionProvider from "./components/MyActionProvider";
 import SampleDocument from "./components/SampleDocument";
-import getConfig from "./components/MyConfig";
-
-export const ChatHistoryContext = createContext([]);
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,12 +21,12 @@ function App() {
       <SampleDocument />
       <button className="chatbot-button" onClick={toggleChatbot}>
         <img
-          className="chatbot-img"
-          src={require("./bot_icon.png")}
+          className="chatbot-img-button"
+          src={require("./images/bot_icon.png")}
           alt="bot icon"
         />
       </button>
-      <div className={`chatbot-container ${isVisible ? "show" : ""}`}>
+      <div className={`chatbot-container ${isVisible ? "show" : "hide"}`}>
         <Chatbot
           config={config}
           messageParser={MessageParser}
