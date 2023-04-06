@@ -1,0 +1,32 @@
+.chatbot-container {
+  display: none;
+}
+
+.chatbot-container.show {
+  display: block;
+  position: fixed;
+  bottom: 14%;
+  right: 20px;
+  z-index: 99999;
+}
+
+.chatbot-button {
+  background-color: white;
+  display: block;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  border-radius: 50%;
+  border-color: blue;
+
+  cursor: pointer;
+
+  width: 5%;
+  height: 10%;
+}
+
+.chatbot-img {
+  width: 80%;
+}
